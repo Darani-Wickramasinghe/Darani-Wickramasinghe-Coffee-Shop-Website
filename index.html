@@ -1,237 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Coffee WebSite </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--Header / Navabr-->
-       <header> 
-            <nav class="navbar section-content">
-                <a href="#" class="nav-logo">
-                    <h2 class="logo-text">☕Coffee</h2>
-                </a>
-                <ul class="nav-menu">
-                    <button id="menu-close-button" class="fas fa-times"></button>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#gallery" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House – Premium Coffee in Colombo, Sri Lanka</title>
+  <meta name="description" content="Coffee House Colombo — Sri Lanka's favourite coffee destination since 2010. Hot beverages, cold brews, desserts, combos and more. Order online or visit us in Colombo 10.">
 
-                <button id="menu-open-button" class="fas fa-bars"></button>
-            </nav>
-        </header>
-        <main>
-            <!--Hero Section-->
-            <section class="hero-section">
-                <div class="section-content">
-                    <div class="hero-details">
-                        <h2 class="title">Best Coffee</h2>
-                        <h3 class="subtitle">Make your great with our special 
-                        coffee!</h3>
-                        <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup 
-                            sparks joy.</p>
-                            <div class="buttons">
-                                <a href="#" class="button order-now">Order Now</a> 
-                                 <a href="#" class="button contact-us">Contact Us</a>                         
-                            </div>
-                    </div> 
-                    <div class="hero-image-wrapper">
-                      <img src="image/coffee-hero-section.png" alt="Hero" class="hero-image">
-                    </div>          
-                </div>
-            </section>
+  <!-- Performance preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <section class="about-section" id="about">
-                <div class="section-content">
-                    <div class="about-image-wrapper">
-                       <img src="image/about-image.jpg" alt="About"
-                       class="about-image">
-                    </div>
-                    <div class="about-details">
-                      <h2 class="section-title">About Us</h2>
-                      <p class="text">At Coffee House in Colombo Sri Lanka, we pride ourselves
-                        on being a go-to destination for coffee lovers and conversation
-                        seekers alike,we are dedicated to providing an exceptional coffee
-                        experience in a cozy and inviting atmosphere, where guests can relax,
-                        unwind and enjoy their in comfort.
-                      </p>
-                      <div class="social-link-list">
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-x-twitter"></i></a>
-                      </div>
-                    </div>
-                </div>
-            </section>
+  <!-- Google Fonts: Poppins (body) · Playfair Display (headings) · Miniver (logo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Playfair+Display:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-            <section class="menu-section" id="menu">
-                <h2 class="section-title">Our Menu</h2>
-                <div class="section-content">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <img src="image/hot-beverages.png" alt="Hot Beverages"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Hot Beverages</h3>
-                            <p class="text">Wide range of Steaming hot coffee to make you
-                                fresh and light.</p>
-                            </div>
-                        </li>
-                         <li class="menu-item">
-                            <img src="image/cold-beverages.png" alt="Cold Beverages"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Cold Beverages</h3>
-                            <p class="text">Creamy and frothy cold coffee to make you
-                                cool.</p>
-                            </div>
-                        </li>
-                         <li class="menu-item">
-                            <img src="image/refreshment.png" alt="Refreshment"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Refreshment</h3>
-                            <p class="text">Fruit and icy refreshing drink to make you feel
-                                refresh.</p>
-                            </div>
-                        </li>
-                         <li class="menu-item">
-                            <img src="image/special-combo.png" alt="Special Combo"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Special Combo</h3>
-                            <p class="text">Your favourite eating and drinking combination.</p>
-                            </div>
-                        </li>
-                         <li class="menu-item">
-                            <img src="image/desserts.png" alt="Desserts"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Desserts</h3>
-                            <p class="text">Satiate your plate and take you on a 
-                                culinary treat.</p>
-                            </div>
-                        </li>
-                         <li class="menu-item">
-                            <img src="image/burger-frenchfries.png" alt="Burger & French Fries"
-                            class="menu-image" />
-                            <div class="menu-image">
-                            <h3 class="name">Burger & French Fries</h3>
-                            <p class="text">Quick bites to satisfy your small size
-                                hunger.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="gallery-section" id="gallery">
-                <h2 class="section-title">Gallery</h2>
-                <div class="section-content">
-                    <ul class="gallery-list">
-                        <li class="gallery-item">
-                            <img src="image/gallery-1.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                        <li class="gallery-item">
-                            <img src="image/gallery-2.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                        <li class="gallery-item">
-                            <img src="image/gallery-3.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                        <li class="gallery-item">
-                            <img src="image/gallery-4.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                        <li class="gallery-item">
-                            <img src="image/gallery-5.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                        <li class="gallery-item">
-                            <img src="image/gallery-6.jpg"  alt="Gallery"
-                            class="gallery-image">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="contact-section" id="contact">
-                <h2 class="section-title">Contact Us</h2>
-                <div class ="section-content">
-                    <ul class="contact-info-list">
-                        <li class="contact-info">
-                        <i class="fa-solid fa-location-crosshairs"></i>
-                        <p>120/5 Colombo 10 Sri Lanka</p>
-                        </li>
-                        <li class="contact-info">
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>info@coffeeshopwebsite.com</p>
-                        </li>
-                        <li class="contact-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>011-2166507</p>
-                        </li>
-                        <li class="contact-info">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>Monday - Friday: 9.00 AM - 5:00 PM</p>
-                        </li>
-                        <li class="contact-info">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>Saturday:10.00 AM - 3:00 PM</p>
-                        </li>
-                        <li class="contact-info">
-                        <i class="fa-solid fa-globe"></i>
-                        <p>www.codingweb.com</p>
-                        </li>
-                    </ul>
-                    <form action="#" class="contact-form">
-                        <input type="text" placeholder="Your name" class="form-input" required>
-                         <input type="email"  placeholder="Your email" class="form-input" required>
-                         <textarea placeholder="Your Message" class="form-input"
-                         required></textarea>
-                         <button class="submit-button">Submit</button>
-                    </form>
-                </div>
-            </section>
+  <!-- Font Awesome 6 (stable) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-            <footer class="footer-section">
-                <div class="section-content">
-                    <p class="copyright-text">@2026 Coffee Shop</p>
-          <div class="social-link-list">
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands 
-                            fa-x-twitter"></i></a>
-                      </div>
-                      <p class="policy-text">
-                        <a href="#" class="policy-link">Privacy policy</a>
-                        <span class="seperator">.</span>
-                        <a href="#" class="policy-link">Refund policy</a>
-                      </p>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================== Preloader ======================== -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="brew-ring"></div>
+      <span class="brew-icon">☕</span>
+      <p class="brew-text">Brewing your experience…</p>
+    </div>
+  </div>
+
+  <!-- ======================== Header ======================== -->
+  <header id="site-header">
+    <nav class="navbar section-content" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Coffee House home">
+        <span class="logo-emoji" aria-hidden="true">☕</span>
+        <span class="logo-text">Coffee House</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <button id="menu-close-button" class="nav-close-btn" aria-label="Close navigation menu">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <li><a href="#home"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#menu"         class="nav-link">Menu</a></li>
+        <li><a href="#gallery"      class="nav-link">Gallery</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+        <li class="nav-cta">
+          <a href="#" id="order-now-btn" class="btn btn-primary">
+            <i class="fas fa-shopping-bag" aria-hidden="true"></i> Order Now
+          </a>
+        </li>
+      </ul>
+
+      <button id="menu-open-button" class="nav-open-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ======================== Hero ======================== -->
+    <section class="hero-section" id="home" aria-label="Hero">
+      <div class="hero-bg-deco" aria-hidden="true"></div>
+      <div class="section-content hero-content">
+
+        <div class="hero-text reveal-left">
+          <span class="pill-badge">
+            <i class="fas fa-star" aria-hidden="true"></i> Since 2010 · Colombo's #1 Café
+          </span>
+          <h1 class="hero-title">
+            The <span class="highlight">Perfect</span><br>Cup of Coffee
+          </h1>
+          <p class="hero-desc">
+            From single-origin espressos to handcrafted cold brews — every cup is brewed
+            fresh, served with love, and made to make your day extraordinary.
+          </p>
+          <div class="hero-actions">
+            <a href="#" id="order-now-btn-hero" class="btn btn-primary btn-lg">
+              <i class="fas fa-shopping-bag" aria-hidden="true"></i> Order Now
+            </a>
+            <a href="#menu" class="btn btn-ghost btn-lg">
+              <i class="fas fa-utensils" aria-hidden="true"></i> View Menu
+            </a>
+          </div>
+          <div class="hero-mini-stats" aria-label="Quick stats">
+            <div class="mini-stat">
+              <strong>15+</strong><span>Years</span>
+            </div>
+            <div class="mini-stat-sep" aria-hidden="true"></div>
+            <div class="mini-stat">
+              <strong>50K+</strong><span>Customers</span>
+            </div>
+            <div class="mini-stat-sep" aria-hidden="true"></div>
+            <div class="mini-stat">
+              <strong>30+</strong><span>Blends</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-right" aria-hidden="true">
+          <div class="hero-ring"></div>
+          <img src="image/coffee-hero-section.png" alt="A premium cup of Coffee House coffee" class="hero-img">
+          <div class="float-badge fb-rating">
+            <i class="fas fa-star"></i>
+            <div><strong>4.9 / 5</strong><span>Rating</span></div>
+          </div>
+          <div class="float-badge fb-award">
+            <i class="fas fa-award"></i>
+            <div><strong>Best Café</strong><span>Colombo 2024</span></div>
+          </div>
+        </div>
+
+      </div>
+      <a href="#about" class="hero-scroll-cue" aria-label="Scroll down">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ======================== Stats Bar ======================== -->
+    <section class="stats-section" aria-label="Key statistics">
+      <div class="section-content stats-grid">
+        <div class="stat-card reveal">
+          <i class="fas fa-coffee" aria-hidden="true"></i>
+          <div>
+            <h3 class="stat-num" data-target="50000">0</h3>
+            <p>Cups Served Daily</p>
+          </div>
+        </div>
+        <div class="stat-card reveal">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <div>
+            <h3 class="stat-num" data-target="15000">0</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+        <div class="stat-card reveal">
+          <i class="fas fa-leaf" aria-hidden="true"></i>
+          <div>
+            <h3 class="stat-num" data-target="30">0</h3>
+            <p>Coffee Blends</p>
+          </div>
+        </div>
+        <div class="stat-card reveal">
+          <i class="fas fa-trophy" aria-hidden="true"></i>
+          <div>
+            <h3 class="stat-num" data-target="12">0</h3>
+            <p>Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== About ======================== -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-content about-grid">
+
+        <div class="about-img-wrap reveal-left">
+          <img src="image/about-image.jpg" alt="Inside our Coffee House café" class="about-img">
+          <div class="about-exp-badge" aria-label="15 years of excellence">
+            <strong>15</strong>
+            <span>Years of<br>Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-body reveal-right">
+          <span class="section-sub">Our Story</span>
+          <h2 id="about-heading" class="section-title left">About Coffee House</h2>
+          <p class="body-text">
+            At <strong>Coffee House</strong> in Colombo, Sri Lanka, we pride ourselves on being
+            the go-to destination for coffee lovers and conversation seekers alike. Founded in 2010,
+            we have dedicated ourselves to delivering an exceptional coffee experience in a cozy,
+            inviting atmosphere.
+          </p>
+          <p class="body-text">
+            We source our beans directly from the finest estates in Sri Lanka, Ethiopia, and Colombia
+            — ensuring every cup tells the story of its origin.
+          </p>
+          <div class="about-features" aria-label="Our highlights">
+            <div class="feature-pill"><i class="fas fa-seedling" aria-hidden="true"></i> Ethically Sourced</div>
+            <div class="feature-pill"><i class="fas fa-fire" aria-hidden="true"></i> In-House Roasted</div>
+            <div class="feature-pill"><i class="fas fa-heart" aria-hidden="true"></i> Made with Passion</div>
+            <div class="feature-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> Quality Guaranteed</div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <div class="social-row" aria-label="Follow us on social media">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="#" class="social-btn" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== Menu ======================== -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="section-content">
+        <span class="section-sub light">What We Offer</span>
+        <h2 id="menu-heading" class="section-title light">Our Menu</h2>
+
+        <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Items</button>
+          <button class="filter-btn" data-filter="Beverages" role="tab" aria-selected="false">Beverages</button>
+          <button class="filter-btn" data-filter="Combo" role="tab" aria-selected="false">Combos</button>
+          <button class="filter-btn" data-filter="Food" role="tab" aria-selected="false">Food</button>
+        </div>
+
+        <ul id="menu-list" class="menu-grid" aria-label="Menu items">
+          <li class="menu-card reveal" data-category="Beverages">
+            <div class="menu-card-img-wrap">
+              <img src="image/hot-beverages.png" alt="Hot Beverages" class="menu-card-img">
+              <span class="card-badge">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Beverages</span>
+              <h3 class="card-name">Hot Beverages</h3>
+              <p class="card-desc">Wide range of steaming hot coffee to make you fresh and light.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 350.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Hot Beverages')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card reveal" data-category="Beverages">
+            <div class="menu-card-img-wrap">
+              <img src="image/cold-beverages.png" alt="Cold Beverages" class="menu-card-img">
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Beverages</span>
+              <h3 class="card-name">Cold Beverages</h3>
+              <p class="card-desc">Creamy and frothy cold coffee to make you cool and refreshed.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 400.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Cold Beverages')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card reveal" data-category="Beverages">
+            <div class="menu-card-img-wrap">
+              <img src="image/refreshment.png" alt="Refreshment" class="menu-card-img">
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Beverages</span>
+              <h3 class="card-name">Refreshment</h3>
+              <p class="card-desc">Fruit and icy refreshing drinks to keep you cool all day long.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 300.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Refreshment')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card reveal" data-category="Combo">
+            <div class="menu-card-img-wrap">
+              <img src="image/special-combo.png" alt="Special Combo" class="menu-card-img">
+              <span class="card-badge chefs">Chef's Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Combo</span>
+              <h3 class="card-name">Special Combo</h3>
+              <p class="card-desc">Your favourite eating and drinking combination in one great deal.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 750.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Special Combo')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card reveal" data-category="Food">
+            <div class="menu-card-img-wrap">
+              <img src="image/desserts.png" alt="Desserts" class="menu-card-img">
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Food</span>
+              <h3 class="card-name">Desserts</h3>
+              <p class="card-desc">Satiate your palate and take yourself on a sweet culinary journey.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 450.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Desserts')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card reveal" data-category="Food">
+            <div class="menu-card-img-wrap">
+              <img src="image/burger-frenchfries.png" alt="Burger and French Fries" class="menu-card-img">
+            </div>
+            <div class="menu-card-body">
+              <span class="card-cat">Food</span>
+              <h3 class="card-name">Burger &amp; French Fries</h3>
+              <p class="card-desc">Quick bites to satisfy your small-sized hunger on the go.</p>
+              <div class="card-footer">
+                <span class="card-price">Rs. 550.00</span>
+                <button class="btn btn-primary btn-sm" onclick="openOrderModal('Burger &amp; French Fries')">
+                  <i class="fas fa-plus" aria-hidden="true"></i> Order
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================== Special Offer ======================== -->
+    <section class="offer-section" aria-label="Special offer">
+      <div class="section-content offer-content reveal">
+        <div class="offer-text">
+          <span class="offer-tag">⏰ Limited Time Offer</span>
+          <h2>Get 20% Off Your First Order!</h2>
+          <p>Use code <strong>COFFEE20</strong> at checkout. Valid Mon–Fri, 9 AM – 12 PM only.</p>
+        </div>
+        <a href="#" id="offer-order-btn" class="btn btn-white btn-lg">
+          <i class="fas fa-tag" aria-hidden="true"></i> Claim Offer
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================== Testimonials ======================== -->
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="section-content">
+        <span class="section-sub">What Customers Say</span>
+        <h2 id="reviews-heading" class="section-title">Customer Reviews</h2>
+        <div class="reviews-grid">
+
+          <article class="review-card reveal" aria-label="Review by Nimal Kumara">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              "Absolutely the best coffee I've had in Sri Lanka. The ambience is cozy, the staff is warm,
+              and the espresso is divine. My go-to place every morning!"
+            </blockquote>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">NK</div>
+              <div>
+                <strong>Nimal Kumara</strong>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card featured reveal" aria-label="Review by Saman Perera — featured">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              "The Special Combo is absolutely worth every rupee. Fresh food, great coffee, and the service
+              is incredibly fast. I bring all my business meetings here!"
+            </blockquote>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">SP</div>
+              <div>
+                <strong>Saman Perera</strong>
+                <span>Business Professional</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal" aria-label="Review by Aisha Fernando">
+            <div class="review-stars" aria-label="4.5 out of 5 stars">
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            </div>
+            <blockquote class="review-text">
+              "I've visited many coffee shops across Asia, and Coffee House Colombo stands out with its
+              unique blends and incredible atmosphere. Highly recommended!"
+            </blockquote>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">AF</div>
+              <div>
+                <strong>Aisha Fernando</strong>
+                <span>Coffee Enthusiast</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Gallery ======================== -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="section-content">
+        <span class="section-sub">Our Moments</span>
+        <h2 id="gallery-heading" class="section-title">Photo Gallery</h2>
+        <ul id="gallery-list" class="gallery-grid" aria-label="Photo gallery">
+          <li class="gallery-item reveal" data-index="0">
+            <img src="image/gallery-1.jpg" alt="Coffee House interior — photo 1" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+          <li class="gallery-item reveal" data-index="1">
+            <img src="image/gallery-2.jpg" alt="Coffee House interior — photo 2" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+          <li class="gallery-item reveal" data-index="2">
+            <img src="image/gallery-3.jpg" alt="Coffee House interior — photo 3" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+          <li class="gallery-item reveal" data-index="3">
+            <img src="image/gallery-4.jpg" alt="Coffee House barista at work" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+          <li class="gallery-item reveal" data-index="4">
+            <img src="image/gallery-5.jpg" alt="Coffee House coffee art" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+          <li class="gallery-item reveal" data-index="5">
+            <img src="image/gallery-6.jpg" alt="Coffee House outdoor seating" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay" aria-hidden="true">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================== Contact ======================== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-content">
+        <span class="section-sub">We're Here for You</span>
+        <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+        <div class="contact-grid">
+
+          <!-- Info Panel -->
+          <div class="contact-info-panel reveal-left">
+            <div class="info-cards">
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Visit Us</h4>
+                  <p>120/5, Colombo 10<br>Sri Lanka</p>
                 </div>
-            </footer>
-        </main>
-        <script src="script.js"></script>
-    </body>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Call Us</h4>
+                  <p><a href="tel:+94112166507">011-2166507</a></p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Email Us</h4>
+                  <p><a href="mailto:info@coffeeshopwebsite.com">info@coffeeshopwebsite.com</a></p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Opening Hours</h4>
+                  <p>Mon – Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 3:00 PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7985755706395!2d79.8562!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTUnMzMuNiJOIDc5wrA1MScyMi4zIkU!5e0!3m2!1sen!2slk!4v1234"
+                width="100%" height="200" style="border:0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Coffee House location on Google Maps">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Form Panel -->
+          <div class="contact-form-panel reveal-right">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+              <h3 class="form-panel-title">Send a Message</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name <span class="req" aria-label="required">*</span></label>
+                  <input type="text" id="contact-name" class="form-ctrl" placeholder="e.g. Nimal Kumara" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="req" aria-label="required">*</span></label>
+                  <input type="email" id="contact-email" class="form-ctrl" placeholder="you@example.com" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-ctrl" placeholder="How can we help you?">
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message <span class="req" aria-label="required">*</span></label>
+                <textarea id="contact-message" class="form-ctrl" rows="5" placeholder="Write your message here…" required></textarea>
+              </div>
+              <button type="submit" id="contact-submit" class="btn btn-primary btn-full">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================== Footer ======================== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-main">
+      <div class="section-content footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Coffee House home">☕ Coffee House</a>
+          <p>Your daily dose of happiness, brewed to perfection. Visit us in the heart of Colombo.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Menu</h4>
+          <ul>
+            <li><a href="#menu">Hot Beverages</a></li>
+            <li><a href="#menu">Cold Beverages</a></li>
+            <li><a href="#menu">Refreshments</a></li>
+            <li><a href="#menu">Desserts</a></li>
+            <li><a href="#menu">Special Combos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 120/5, Colombo 10, Sri Lanka</li>
+            <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+94112166507">011-2166507</a></li>
+            <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@coffeeshopwebsite.com">info@coffeeshopwebsite.com</a></li>
+            <li><i class="fas fa-clock" aria-hidden="true"></i> Mon–Fri: 9 AM – 5 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="section-content footer-bottom-inner">
+        <p>&copy; 2026 Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Refund Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== Gallery Lightbox ======================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" style="display:none">
+    <button class="lb-close" id="lb-close" aria-label="Close image viewer">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image">
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="" class="lb-image">
+      <p id="lb-caption" class="lb-caption"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next image">
+      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- ======================== Floating Elements ======================== -->
+  <a href="https://wa.me/94112166507?text=Hello!%20I%20would%20like%20to%20place%20an%20order."
+     class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="wa-tip">Order on WhatsApp</span>
+  </a>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
 </html>
