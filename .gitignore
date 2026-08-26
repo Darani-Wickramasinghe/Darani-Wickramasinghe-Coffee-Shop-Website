@@ -1,0 +1,10 @@
+# IDEs
+.idea/
+.vscode/
+
+# Maven/Java
+target/
+*.class
+
+# Node (if you add it later)
+node_modules/
